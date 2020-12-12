@@ -449,12 +449,16 @@ button.close-end> span:hover {
 @media (max-width: 627px) {
 	.home-page {
 		height: auto;
-		padding-top: 5rem;
+		padding-top: 8rem;
 	}
 	.wrap {
-		width: 100%;
+		width: 60rem;
+		padding: 0;
 		margin: 0;
 	}
+	.wrap-container {
+	margin: 0.1rem;
+}
 	.catalog_container {
 	min-width: 100px;
 	max-width: 100px;
