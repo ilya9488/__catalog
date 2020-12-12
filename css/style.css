@@ -445,24 +445,6 @@ button.close-end> span:hover {
 
 }
 
-@media (max-width: 507px) {
-	.catalog_container {
-	min-width: 20px;
-	max-width: 20px;
-	min-height: 20px;
-	max-height: 20px;
-	padding: 1px;
-}
-.catalog_text {
-	font-size: 1rem;
-	letter-spacing: 2px;
-	position: absolute;
-	padding: 2.9rem 2.5rem;
-	border-radius: 7%;
-	transition: 0.3s;
-	margin-bottom: 0;
-}
-}
 
 @media (max-width: 627px) {
 	.wrap {
@@ -470,17 +452,17 @@ button.close-end> span:hover {
 		margin: 0;
 	}
 	.catalog_container {
-	min-width: 140px;
-	max-width: 140px;
-	min-height: 140px;
-	max-height: 140px;
-	padding: 5px;
+	min-width: 100px;
+	max-width: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	padding: 0;
 }
 .catalog_text {
 	font-size: 1rem;
 	letter-spacing: 2px;
 	position: absolute;
-	padding: 2.9rem 2.5rem;
+	padding: 1.35rem 1rem;
 	border-radius: 7%;
 	transition: 0.3s;
 	margin-bottom: 0;
