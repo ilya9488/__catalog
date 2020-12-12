@@ -466,6 +466,9 @@ button.close-end> span:hover {
 	max-height: 100px;
 	padding: 0;
 }
+ .link { 
+ 	padding: 7px;
+ }
 .catalog_text {
 	display: none;
 }
