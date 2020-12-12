@@ -83,6 +83,17 @@ section {
   color: #fff;
   padding-bottom: 5rem;
 }
+.home-page .catalog__h {
+  text-align: center;
+}
+.home-page .catalog__h .catalog__h_one {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 /* Каталог товаров */
 .catalog {
   text-align: center;
@@ -106,7 +117,7 @@ section {
   align-items: center;
   padding: 2rem;
   height: auto;
-  margin-top: 15rem;
+  margin-top: 8rem;
   margin-bottom: 5rem;
 }
 .wrap-container {
