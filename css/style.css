@@ -67,7 +67,7 @@ section {
 }
 /* Первый экран Главная страница*/
 #main {
-  background: #000000 8 url(../img/5_bg.jpg) center no-repeat;
+  background: #000 url(../img/5_bg.jpg) center no-repeat;
   background-size: cover;
 }
 .home-page {
