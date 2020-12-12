@@ -232,7 +232,8 @@ menu {
 }
 .active-menu {
 	transform: translateX(-20%);
-	max-width: 30%;
+	max-width: 50%;
+	min-width: 50%;
 }
 ul {
 	list-style: none;
@@ -450,6 +451,11 @@ button.close-end> span:hover {
 	.home-page {
 		height: auto;
 		padding-top: 8rem;
+		padding-bottom: 5rem;
+	}
+	.menu-link {
+		right: 10px;
+		top: 10px;
 	}
 	.wrap {
 		width: 60rem;
