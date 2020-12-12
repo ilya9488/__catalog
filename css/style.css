@@ -27,8 +27,8 @@ section {
   border: none;
 }
 .nav-tabs__header:hover {
-  -webkit-box-shadow: 0 0 5px #fff5 ;
-          box-shadow: 0 0 5px #fff5 ;
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 .nav-tabs__header > li > a {
   color: rgba(255, 255, 255, 0.7) !important;
@@ -50,14 +50,14 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.01)), color-stop(9, #000000), to(rgba(255, 255, 255, 0.01)));
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.01), #000000 9, rgba(255, 255, 255, 0.01));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.01)), color-stop(rgba(0, 0, 0, 0.9)), to(rgba(255, 255, 255, 0.01)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.01));
 }
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:active,
 .nav-tabs > li > a:visited,
 .nav-tabs > li > a:focus {
-  background-color: #fff5;
+  background-color: rgba(255, 255, 255, 0.333);
   color: rgba(0, 0, 0, 0.6);
   border: none;
   height: 98%;
@@ -66,11 +66,9 @@ section {
   background-color: #fff;
 }
 /* Первый экран Главная страница*/
-#main {
-  background: #000 url(../img/5_bg.jpg) center no-repeat;
-  background-size: cover;
-}
 .home-page {
+  background: rgba(0, 0, 0, 0.5) url(../img/5_bg.jpg) center no-repeat;
+  background-size: cover;
   height: auto;
   width: 100%;
   display: -webkit-box;
@@ -113,8 +111,8 @@ section {
 }
 .wrap-container {
   margin: auto auto;
-  -webkit-box-shadow: 0 0 10px #0005;
-          box-shadow: 0 0 10px #0005;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
   border-radius: 2%;
   margin: 0.5rem;
 }
@@ -135,19 +133,19 @@ section {
   padding: 10px;
 }
 .img__catalog {
-  -webkit-box-shadow: 0 0 10px #0005;
-          box-shadow: 0 0 10px #0005;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   border-radius: 8%;
 }
 .img__catalog:hover {
-  -webkit-box-shadow: 0 0 10px #fff5;
-          box-shadow: 0 0 10px #fff5;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.333);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.333);
 }
 .catalog_text {
-  color: #fff0;
-  background-color: #0000;
-  text-shadow: 0px 0px 5px #0000;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0);
   letter-spacing: 2px;
   position: absolute;
   padding: 4rem 3.1rem;
@@ -157,9 +155,9 @@ section {
   margin-bottom: 0;
 }
 .catalog_text:hover {
-  color: #fff9;
-  background-color: #0007;
-  text-shadow: 0px 0px 5px #000;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.467);
+  text-shadow: 0px 0px 5px #000000;
 }
 .fa-eye {
   font-size: 4rem;
@@ -176,13 +174,13 @@ section {
 }
 .container__phone {
   position: relative;
-  background-color: #0008;
+  background-color: rgba(0, 0, 0, 0.533);
   margin-top: 7rem;
   padding: 1rem;
 }
 .contacts-link {
   display: inline;
-  color: #fff;
+  color: #ffffff;
 }
 #contacts {
   background-color: rgba(0, 0, 0, 0.8);
