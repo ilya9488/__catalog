@@ -39,7 +39,7 @@ section {
 .tub_container {
   position: fixed;
   top: 2rem;
-  width: 200rem;
+  width: 100rem;
   min-width: 99rem;
   z-index: 50;
 }
@@ -545,6 +545,12 @@ button.close-end > span:hover {
   .wrap {
     margin-top: 10rem;
   }
+  .close-btn__left {
+    display: none;
+  }
+  .close-btn {
+    display: none;
+  }
 }
 @media (min-width: 1199px) and (max-width: 1238px) {
   .menu-link {
@@ -553,9 +559,21 @@ button.close-end > span:hover {
   .wrap {
     width: 70rem;
   }
+  .close-btn__left {
+    display: none;
+  }
+  .close-btn {
+    display: none;
+  }
 }
 @media (min-width: 1199px) and (max-width: 2238px) {
   .menu-link {
+    display: none;
+  }
+  .close-btn__left {
+    display: none;
+  }
+  .close-btn {
     display: none;
   }
 }
