@@ -16,7 +16,7 @@ h6 {
   margin: 0;
 }
 section {
-  height: 100vh;
+  height: auto;
   width: 100%;
   color: #fff;
 }
@@ -174,20 +174,90 @@ section {
   font-size: 4rem;
 }
 /* Второй экран */
-#news {
-  background: rgba(0, 0, 0, 0.8) url(../img/2_bg.jpg) center center no-repeat;
+.news {
+  height: 100%;
+  background: rgba(75, 153, 27, 0.5) url(../img/call_bg.jpg) center center no-repeat;
   background-size: cover;
+}
+.news__container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 70, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.news__contact {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 5rem;
+}
+.news .contact__title {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.news .contact__title p {
+  font-size: 2rem;
 }
 /* Экран третий - Карта  */
 #feedback {
   background: rgba(0, 0, 0, 0.8) url(../img/map.jpg) center center no-repeat;
   background-size: cover;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.feedback__contact {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 2rem;
+}
+.feedback__contact h2 {
+  margin-bottom: 1.5rem;
+}
+.feedback__contact .adres {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.map iframe {
+  border-radius: 5px;
 }
 .container__phone {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.533);
-  margin-top: 7rem;
+  height: auto;
+  width: auto;
   padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 .contacts-link {
   display: inline;
