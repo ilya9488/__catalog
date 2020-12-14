@@ -481,8 +481,8 @@ button.close-end > span:hover {
 .fotorama__fullscreen-icon {
   left: 0;
   color: #fff;
-  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
   border-radius: 50%;
 }
 /* Окно обратной связи */
