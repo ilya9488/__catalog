@@ -208,10 +208,19 @@ a.link:hover {
 }
 /* Второй экран */
 .news {
+  text-align: center;
   height: auto;
   width: 100%;
   background: rgba(75, 153, 27, 0.5) url(../img/5_bg.jpg) center center no-repeat;
   background-size: cover;
+}
+.news .contact__h2 {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .news__container {
   width: 100%;
@@ -469,8 +478,12 @@ li a.nav__link:visited {
   background-color: #000;
 }
 .modal.in .modal-dialog {
-  -webkit-transform: translateY(30%);
-  transform: translateY(30%);
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
+  margin: 0 auto;
+}
+.modal {
+  padding-left: 0 !important;
 }
 .modal-body {
   padding: 0;
