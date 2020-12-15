@@ -208,6 +208,7 @@ a.link:hover {
 /* Второй экран */
 .news {
   height: 100%;
+  width: 100%;
   background: rgba(75, 153, 27, 0.5) url(../img/5_bg.jpg) center center no-repeat;
   background-size: cover;
 }
@@ -604,6 +605,14 @@ button.close-end > span:hover {
   .catalog_text {
     display: none;
   }
+  .modal-content {
+    text-align: center;
+  }
+  .popup-btn {
+    display: inline;
+    text-align: center;
+    margin: 0;
+  }
 }
 @media (max-width: 767px) {
   .home-page {
@@ -623,13 +632,20 @@ button.close-end > span:hover {
   .tub_container {
     display: none;
   }
+  .news {
+    height: auto;
+    padding: 0;
+  }
+  .news__contact {
+    margin: 0;
+  }
   .active-menu {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     max-width: 100%;
   }
   .modal {
-    margin-top: -10rem;
+    margin-top: 10rem;
   }
 }
 @media (min-width: 767px) and (max-width: 932px) {
