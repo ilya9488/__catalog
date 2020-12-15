@@ -1,11 +1,39 @@
+/* Fonts Family */
+/* ctr+f alt+enter клавиша в прво-> */
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNova-Regular.eot');
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Regular.woff2') format('woff2'), url('../fonts/ProximaNova-Regular.woff') format('woff'), url('../fonts/ProximaNova-Regular.ttf') format('truetype'), url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNova-Bold.eot');
+  src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Bold.woff2') format('woff2'), url('../fonts/ProximaNova-Bold.woff') format('woff'), url('../fonts/ProximaNova-Bold.ttf') format('truetype'), url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lobster';
+  src: url('Lobster-Regular.eot');
+  src: url('Lobster-Regular.eot?#iefix') format('embedded-opentype'), url('Lobster-Regular.woff2') format('woff2'), url('Lobster-Regular.woff') format('woff'), url('Lobster-Regular.ttf') format('truetype'), url('Lobster-Regular.svg#Lobster-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin: 0;
   padding: 0;
 }
 body {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   padding-right: 0 !important;
+  font-family: 'ProximaNova_reg', sans-serif;
 }
 h1,
 h2,
@@ -104,6 +132,7 @@ section {
   padding: 10rem 0 5rem;
 }
 .wrap {
+  font-family: 'ProximaNova_bold', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,18 +199,22 @@ section {
   background-color: rgba(0, 0, 0, 0.467);
   text-shadow: 0px 0px 5px #000000;
 }
+a.link:hover {
+  cursor: nw-resize;
+}
 .fa-eye {
   font-size: 4rem;
 }
 /* Второй экран */
 .news {
-  height: auto;
+  height: 100%;
   background: rgba(75, 153, 27, 0.5) url(../img/5_bg.jpg) center center no-repeat;
   background-size: cover;
 }
 .news__container {
   width: 100%;
   height: 100%;
+  padding: 10rem;
   background-color: rgba(0, 0, 20, 0.1);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,6 +233,53 @@ section {
   border-radius: 10px;
   padding: 5rem;
 }
+.news__contact .container__contact {
+  display: block;
+  margin: 1rem auto;
+}
+.news__contact .contacts-link {
+  display: inline;
+  color: #ffffff;
+}
+.news__contact .container__contact__for_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  margin: 1rem auto;
+}
+.news__contact .container__contact__for_btn .contact__btn {
+  position: relative;
+  display: block;
+  width: 30rem;
+  padding: 1rem;
+  margin: 0 auto;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.news__contact .container__contact__for_btn .contact__btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 0 0 5px rgba(153, 204, 255, 0.5);
+          box-shadow: 0 0 5px rgba(153, 204, 255, 0.5);
+  font-size: 1.5rem;
+}
+.news__contact .container__phone {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
 .news .contact__title {
   height: auto;
   width: auto;
@@ -210,61 +290,7 @@ section {
           box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 .news .contact__title p {
-  font-size: 2rem;
-}
-/* Экран третий - Карта  */
-#feedback {
-  background: rgba(0, 0, 0, 0.8) url(../img/map.jpg) center center no-repeat;
-  background-size: cover;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.feedback__contact {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  padding: 2rem;
-}
-.feedback__contact h2 {
-  margin-bottom: 1.5rem;
-}
-.feedback__contact .adres {
-  height: auto;
-  width: auto;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-.map iframe {
-  border-radius: 5px;
-}
-.container__phone {
-  height: auto;
-  width: auto;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-}
-.contacts-link {
-  display: inline;
-  color: #ffffff;
-}
-#contacts {
-  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1.3rem;
 }
 /* Меню бургер */
 .menu-link {
@@ -437,8 +463,8 @@ li a.nav__link:visited {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 5rem;
   -webkit-transition: 0.5s;
@@ -467,6 +493,9 @@ button.close-end > span:hover {
   max-width: 20rem;
   border-radius: 5px;
   padding: 0.5rem;
+  margin: 0 auto;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 .modal-btn:hover {
   color: rgba(0, 0, 0, 0.7);

@@ -1,11 +1,59 @@
+/* Fonts Family */ /* ctr+f alt+enter клавиша в прво-> */ 
+@font-face {
+    font-family: 'ProximaNova_reg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova_bold';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('Lobster-Regular.eot');
+    src: url('Lobster-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lobster-Regular.woff2') format('woff2'),
+        url('Lobster-Regular.woff') format('woff'),
+        url('Lobster-Regular.ttf') format('truetype'),
+        url('Lobster-Regular.svg#Lobster-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.reg() {
+  font-family: 'ProximaNova_reg', sans-serif;
+}
+.bold() {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.lobs() {
+  font-family: 'Lobster';
+}
+
 * {
+  box-sizing: border-box;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   margin: 0;
   padding: 0;
 }
 body {
+  box-sizing: border-box !important;
   padding-right: 0 !important;
+  .reg();
 }
 h1,
 h2,
@@ -67,6 +115,21 @@ section {
 }
 /* Первый экран Главная страница*/
 .home-page {
+    background: rgba(0, 0, 0, 0.5) url(../img/5_bg.jpg) center no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #fff;
+    padding-bottom: 5rem;
   .catalog__h {
     text-align: center;
   .catalog__h_one {
@@ -77,21 +140,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
    }
   }
-  background: rgba(0, 0, 0, 0.5) url(../img/5_bg.jpg) center no-repeat;
-  background-size: cover;
-  height: auto;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-  padding-bottom: 5rem;
 }
 /* Каталог товаров */
 .catalog {
@@ -103,6 +151,7 @@ section {
   padding: 10rem 0 5rem;
 }
 .wrap {
+    .bold();
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,17 +218,21 @@ section {
   background-color: rgba(0, 0, 0, 0.467);
   text-shadow: 0px 0px 5px #000000;
 }
+ a.link:hover {
+    cursor: nw-resize;
+ }
 .fa-eye {
   font-size: 4rem;
 }
 /* Второй экран */
  .news {
-  height: auto;
+  height: 100%;
   background: rgba(75, 153, 27, 0.5) url(../img/5_bg.jpg) center center no-repeat;
   background-size: cover;
   &__container {
     width: 100%;
     height: 100%;
+  padding: 10rem;
     background-color: rgba(0, 0, 20, 0.1);
     display: flex;
     justify-content: center;
@@ -190,6 +243,47 @@ section {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
     border-radius: 10px;
     padding: 5rem;
+    .container__contact {
+    display: block;
+    margin: 1rem auto;
+    }
+  .contacts-link {
+    display: inline;
+    color: #ffffff;
+  }
+  .container__contact__for_btn {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 1rem auto;
+
+  .contact__btn {
+    position: relative;
+    display: block;
+    width: 30rem;
+    padding: 1rem;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
+  }
+ .contact__btn:hover {
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 5px rgba(153, 204, 255, 0.5) ;
+      font-size: 1.5rem;
+    }
+  }
+  .container__phone {
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
+}
   }
   .contact__title {
     height: auto;
@@ -199,57 +293,11 @@ section {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
     p {
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
   }
  }
-/* Экран третий - Карта  */
-#feedback {
-  background: rgba(0, 0, 0, 0.8) url(../img/map.jpg) center center no-repeat;
-  background-size: cover;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-}
-.feedback__contact {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
-  border-radius: 10px;
-  padding: 2rem;
-  h2 {
-    margin-bottom: 1.5rem;
-  }
- .adres {
-    height: auto;
-    width: auto;
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
-  }
-}
-.map iframe {
-  border-radius: 5px;
-}
-.container__phone {
-  height: auto;
-  width: auto;
-  padding: 1rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
-
-}
-.contacts-link {
-  display: inline;
-  color: #ffffff;
-}
-#contacts {
-  background-color: rgba(0, 0, 0, 0.8);
-}
 /* Меню бургер */
 .menu-link {
   position: fixed;
@@ -417,15 +465,10 @@ li a.nav__link:visited {
   position: relative;
   width: auto;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 5rem;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 button.close-end > span {
@@ -451,6 +494,9 @@ button.close-end > span:hover {
   max-width: 20rem;
   border-radius: 5px;
   padding: 0.5rem;
+  margin: 0 auto;
+  transform: translateX(100%);
+
 }
 .modal-btn:hover {
   color: rgba(0, 0, 0, 0.7);
