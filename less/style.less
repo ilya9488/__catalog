@@ -51,6 +51,7 @@
   padding: 0;
 }
 body {
+  width: auto;
   box-sizing: border-box !important;
   padding-right: 0 !important;
   .reg();
@@ -226,7 +227,7 @@ section {
 }
 /* Второй экран */
  .news {
-  height: 100%;
+  height: auto;
   width: 100%;
   background: rgba(75, 153, 27, 0.5) url(../img/5_bg.jpg) center center no-repeat;
   background-size: cover;
@@ -272,7 +273,7 @@ section {
   }
  .contact__btn:hover {
       cursor: pointer;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(0, 0, 0, 0.1);
       box-shadow: 0 0 5px rgba(153, 204, 255, 0.5) ;
       font-size: 1.5rem;
     }
@@ -293,8 +294,27 @@ section {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
+    text-align-last: left;
     p {
       font-size: 1.3rem;
+    }
+    a {
+      color: #fff;
+      padding: 3px;
+      transition: 0.1s;
+      &:hover {
+        text-shadow: 0 0 5px rgba(153, 204, 255, 0.5) ;
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+      }
+    }
+  }
+  .row__news {
+    margin-bottom: 2rem;
+  }
+  .news__map {
+    h2 {
+      height: 4rem;
     }
   }
  }
@@ -640,6 +660,9 @@ button.close-end > span:hover {
       margin: 0;
       padding: 3rem 0;
     }
+    .news__container {
+      padding: 0;
+    }
   }
   .active-menu {
     -webkit-transform: translateX(0);
@@ -647,7 +670,7 @@ button.close-end > span:hover {
     max-width: 100%;
   }
   .modal {
-    margin-top: 10rem;
+    margin-top: 8rem;
     .feedback-form {
 
     }
