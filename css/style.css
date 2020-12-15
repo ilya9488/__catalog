@@ -638,6 +638,7 @@ button.close-end > span:hover {
   }
   .news__contact {
     margin: 0;
+    padding: 3rem 1rem;
   }
   .active-menu {
     -webkit-transform: translateX(0);
