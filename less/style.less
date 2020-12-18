@@ -94,8 +94,6 @@ section {
       color: #000;
       background-color: #fff;
     } 
-
-  /* index(2).html */
   }
 }
 .nav-tabs__header:hover {
@@ -140,6 +138,7 @@ section {
 .nav-tabs > li > a:focus {
   background-color: #fff;
 }
+
 /* Первый экран Главная страница*/
 .home-page {
     background: rgba(0, 0, 0, 0.5) url(../img/5_bg.jpg) center no-repeat;
@@ -372,6 +371,96 @@ section {
     }
   }
  }
+ 
+     /* Index(2) Описание товаров */
+.wrap {
+  &__list {
+    position: absolute;
+    height: auto;
+    width: 30rem;
+    padding: 3rem 3rem 5rem;
+    border-radius: 5px;
+    left: -30rem;
+    top: 5%;
+    color: #000;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    li {
+      width: 100%;
+      padding-left: 2rem;
+      border-bottom: 1px solid #000;
+      &:hover {
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+        border-bottom: none;
+      }
+    }
+  }
+}
+.products-page {
+  background: #fff;
+  .nav-tabs__produts {
+    background: #fff ;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+     a {
+      color: #000;
+      &:hover {
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+       }
+       &:focus {
+        background-color: #000; 
+        color: #fff !important;  
+
+       }
+    }
+   li a {
+       color: #000 !important;  
+       &:hover {
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+       }
+       &:focus {
+        background-color: #000; 
+        color: #fff !important;  
+
+       }
+   }
+  }
+  .catalog__h_one__products {
+    color: #000;
+    border-bottom: 1px solid #000 ;
+    padding-bottom: 1rem;
+  }
+.products-page__container {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  color: #000;
+  width: 100%;
+  height: auto;
+  padding: 1rem 2rem ;
+  &__description {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: auto;
+    padding: 1rem;
+    margin: 1rem;
+    &__text {
+      padding-left: 1rem;
+    }
+    &__img {
+      margin-bottom: 1rem ;
+      display: inline-block;
+      width: 20rem;
+      img {
+        width: 100%;
+      }
+    }
+    ul {
+      display: inline-block;
+      li {
+        height: 2rem;
+      }
+    }
+  }
+ }
+}
 
 /* Меню бургер */
 .menu-link {
@@ -457,6 +546,10 @@ ul {
   padding: 0;
   margin: 0;
   line-height: 3;
+  /* index(2) */
+  .burger__link {
+    font-size: 2rem;
+  }
 }
 a {
   display: inline-block;
@@ -714,7 +807,7 @@ button.close-end > span:hover {
   }
   .news { 
     height: auto;
-    padding: 0;
+    padding: 1rem 0 5rem 0;
     &__contact {
       margin: 0;
       padding: 3rem 0;
@@ -734,6 +827,14 @@ button.close-end > span:hover {
 
     }
 
+  }
+  /* index(2 )*/
+  .catalog__h_one__products {
+    width: 90%;
+    margin-top: -6rem;
+    padding-top: 1rem;
+    border-bottom: none !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
 
 }
