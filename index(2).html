@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="css/material-kit.css"> -->
-  <link rel="stylesheet" type="text/css" href="fotorama-4.6.4/fotorama.css">
+  <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+  <link rel="stylesheet" href="css/cs-skin-slide.css">
+
+  <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,15 +24,11 @@
   <section class="home-page" id="main">
     <div class="container tub_container">
     <div class="col-md-12 col-sm-12">
-        
       <ul class="nav nav-tabs nav-tabs__header">
-
-        <li class="nav_list"><a href="#main"><i class="fas fa-images"></i> Каталог</a></li>
-        <li class="nav_list"><a href="#news" title="Посмотреть каталог"><i class="fas fa-phone-square"></i> Контакты</a></li>
-        <li class="nav_list"><a href="index.html"><i class="fas fa-align-left"></i> Подробное описание</a></li>
-      
+        <a  class="nav_list__link" href="index.html"><i class="fas fa-chevron-left"></i> Назад</a>       
+        <li class="nav_list"><a href="#news" title="Контакты"><i class="fas fa-phone-square"></i> Контакты</a></li>
+        <li class="nav_list"><a href="#main" title="Описание"><i class="fas fa-align-left"></i> Описание</a></li>
       </ul>
-
         </div>
       </div>
 
@@ -38,87 +37,14 @@
    <div class="catalog__h col-lg-12 col-md-12 col-sm-12 col-xs-12">
      <h1 class="catalog__h_one">Описание товаров</h1>
    </div> 
-          <div class="wrap-container">
-            <div class="catalog_container">
-            <a data-toggle="modal" href="#work-1" class="link">
-                <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/chair.jpg" alt="">
-            </a>
-            </div>
-          </div>
-          <div class="wrap-container">
-            <div class="catalog_container">
-              <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/bed.jpg" alt="">
-            </a>
-            </div>
-          </div>
-          <div class="wrap-container">
-            <div class="catalog_container">
-              <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/child_room.jpg" alt="">
-            </a>
-            </div>
-          </div>
-
-          <!-- Дубли -->
-            <div class="wrap-container">
-              <div class="catalog_container">
-                <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/cupboard.jpg" alt="">
-            </a>
-              </div>
-            </div>
-            <div class="wrap-container">
-              <div class="catalog_container">
-                <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/kitchen_room.jpg" alt="">
-            </a>
-              </div>
-            </div>
-            <div class="wrap-container">
-              <div class="catalog_container">
-                <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/sofa.jpg" alt="">
-            </a>
-              </div>
-            </div>    
-         
-
-         <div class="wrap-container">
-              <div class="catalog_container">
-                <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/cupboard.jpg" alt="">
-            </a>
-              </div>
-            </div>
-            <div class="wrap-container">
-              <div class="catalog_container">
-                <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/kitchen_room.jpg" alt="">
-            </a>
-              </div>
-            </div>
-            <div class="wrap-container">
-              <div class="catalog_container">
-                <a data-toggle="modal" href="#work-1" class="link">
-              <p class="catalog_text"><i class="far fa-eye"></i><br> Смотреть</p>
-              <img class="img__catalog" src="img/galery/sofa.jpg" alt="">
-            </a>
-        </div>
-      </div>    
+             
    </div>
+   <a  class="main__up" href="#main"><i class="fas fa-chevron-up"></i> Вверх</a> 
   </section>
+
   <!-- Контакты -->
 <section class="news" id="news">
-        <div class="news__container">
+        <div  id="newse" class="news__container">
         <div class="container col-xs-12">
   <h2 class="contact__h2"><i class="fas fa-phone-square"></i> Контакты </h2>
         <div class="row news__contact">
@@ -373,7 +299,7 @@
        </div>
       </div>
     </div>
-  </div>
+  </div>      
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script> 
@@ -382,6 +308,15 @@
   <script src="js/menu_burger.js"></script> 
   <script src="js/tabs.js"></script> 
   <script src="fotorama-4.6.4/fotorama.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/selectFx.js"></script>
+    <script>
+      (function() {
+        [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {  
+          new SelectFx(el);
+        } );
+      })();
+    </script>
 
   <!-- Browser-sync css watch -->
   <script id="__bs_script__">//<![CDATA[
@@ -389,6 +324,5 @@
 //]]></script>
 
 
-    
 </body> 
 </html> 

@@ -74,6 +74,29 @@ section {
   border-radius: 5px;
   color: #fff;
   border: none;
+  /* index(2).html */
+  a.nav_list__link {
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    width: auto;
+    height: 98%;
+    padding: 0 10px 0 10px;
+    margin: 0 3rem;
+    word-spacing: 5px;
+    .reg();
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.333);
+      border: none;
+      height: 98%;
+    }
+    &:focus {
+      color: #000;
+      background-color: #fff;
+    } 
+
+  /* index(2).html */
+  }
 }
 .nav-tabs__header:hover {
   -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -102,6 +125,9 @@ section {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.01)), color-stop(rgba(0, 0, 0, 0.9)), to(rgba(255, 255, 255, 0.01)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.01));
 }
+.nav-tabs > li > a {
+  padding: 12px 15px 0 15px;
+}
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:active,
 .nav-tabs > li > a:visited,
@@ -109,7 +135,7 @@ section {
   background-color: rgba(255, 255, 255, 0.333);
   color: rgba(0, 0, 0, 0.6);
   border: none;
-  height: 98%;
+  height: 99%;
 }
 .nav-tabs > li > a:focus {
   background-color: #fff;
@@ -147,6 +173,7 @@ section {
   text-align: center;
   display: block;
   height: auto;
+  transition: 0.4s;
 }
 .catalog__title {
   padding: 10rem 0 5rem;
@@ -225,6 +252,24 @@ section {
 .fa-eye {
   font-size: 4rem;
 }
+.main__up {
+  position: fixed;
+  bottom: 0;
+  width: 20rem;
+  font-size: 2.5rem ;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  transition: 0.3s;
+  &:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+
+  }
+}
 /* Второй экран */
  .news {
     text-align: center;
@@ -253,6 +298,7 @@ section {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5) ;
     border-radius: 10px;
     padding: 5rem;
+    margin-bottom: 4rem;
     .container__contact {
     display: block;
     margin: 1rem auto;
